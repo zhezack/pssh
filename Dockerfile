@@ -4,7 +4,7 @@ RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.
     yum install -y pssh sshpass nano tmux && \
     yum clean all
 
-COPY .bash_profile ~/
+COPY .bash_profile /root/
 
 WORKDIR /home
 
